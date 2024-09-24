@@ -9,7 +9,7 @@ function App() {
 
   // Funktio, joka vaihtaa näkyvän sivun kun painiketta klikataan
   const meneSivulle = (sivu) => (event) => {
-    event.preventDefault(); // Estetään sivun uudelleenlataus
+    event.preventDefault(); // Estetään sivun uudelleenlataus jotta ei hukata noita useState-hookin arvoja
     setSivu(sivu); // Vaihdetaan näkyvissä oleva sivu
   };
 
